@@ -7,10 +7,8 @@ Snake game(course: IT206, DAIICT)
 1. Introduction
 2. [Installation](#installation)
 3. [Usage](#usage)
-4. [Contributing](#contributing)
-5. [License](#license)
-6. [Data Structure Analysis](#data-structure-analysis)
-7. [Conclusion](#conclusion)
+4. [Data Structure Analysis](#data-structure-analysis)
+5. [Conclusion](#conclusion)
 
 <h2>1. Introduction</h2>
 <br>
@@ -39,12 +37,12 @@ To run the Snake game, follow the instructions below:
 
 After successfully installing and running the game, you can interact with it using the following controls:
 
-- **W**: Move up
-- **A**: Move left
-- **S**: Move down
-- **D**: Move right
-- **X**: Quit the game
-- **R**: Restart the game after game over
+- W: Move up
+- A: Move left
+- S: Move down
+- D: Move right
+- X: Quit the game
+- R: Restart the game after game over
 
 ### Game Features:
 
@@ -54,43 +52,14 @@ After successfully installing and running the game, you can interact with it usi
 - The score is displayed on the screen, and the high score is saved in `highscore.txt`.
    
 
-## 6. Data Structure Analysis
+## 4. Data Structure Analysis
    
 The program uses the following data structures and object-oriented concepts to represent the game:
-
-### Classes:
-
-#### Food Class:
-- Attributes:
-  - `x`, `y`: Coordinates of the food on the grid.
-- **Methods**:
-  - `generate()`: Randomly generates the position of the food within the grid dimensions.
-    
-#### Snake Class:
-- **Attributes**:
-  - `x`, `y`: Coordinates of the snake's head.
-  - `tailX[]`, `tailY[]`: Arrays that store the coordinates of each segment of the snake's tail.
-  - `nTail`: The number of segments in the snake's tail.
-  - `dir`: Enum for controlling the direction of the snake (STOP, LEFT, RIGHT, UP, DOWN).
-- **Methods**:
-  - `move()`: Updates the position of the snake by shifting the positions of the tail and moving the head according to the current direction.
-               
-#### Grid Class:
-- **Attributes**:
-  - `gameOver`: Boolean flag to check if the game is over.
-  - `score`, `highScore`: Stores the current and highest score.
-  - `snake`: An instance of the Snake class.
-  - `food`: An instance of the Food class.
-- **Methods**:
-  - `loadHighScore()`: Loads the high score from a file.
-  - `saveHighScore()`: Saves the current score as the new high score if applicable.
-  - `draw()`: Displays the current state of the game grid.
-  - `input()`: Handles user input for controlling the snake.
-  - `logic()`: Contains the logic for moving the snake and detecting collisions.
     
 ### Data Structures Used:
 
 #### Arrays:
+-We have used array to represent snake body and 2D array in form of nested form to represent grid.
 - The `tailX[]` and `tailY[]` arrays store the positions of the snake's tail. These arrays are used in conjunction with the `nTail` variable to keep track of the snake’s growing body.
 
 #### Enum:
@@ -105,8 +74,8 @@ The program uses the following data structures and object-oriented concepts to r
 - The `Snake` object is responsible for the movement of the snake and collision detection.
 - The `Food` object randomly places food on the grid and generates new food when eaten by the snake.
 
-## 7. Conclusion
+## 5. Conclusion
    
 This Snake game is an enjoyable and simple implementation that uses basic C++ programming concepts such as arrays, classes, and user input handling. It provides an interactive experience with a growing snake that tries to consume food while avoiding collisions with itself and the walls.
 
-Feel free to contribute and enhance the game with new features, bug fixes, or improvements!
+
