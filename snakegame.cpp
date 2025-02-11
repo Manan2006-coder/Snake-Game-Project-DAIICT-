@@ -8,7 +8,9 @@ using namespace std;
 
 const int WIDTH = 20;
 const int HEIGHT = 17;
-
+void setColor(int color) {
+    SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), color);
+}
 class Food {
 public:
     int x, y;
@@ -86,14 +88,18 @@ public:
 
     void draw() {
         system("cls");  // Clear the screen (Windows-specific)
-        for (int i = 0; i < WIDTH + 2; i++) cout << "#";
+        setColor(11);
+        for (int i = 0; i < WIDTH + 2; i++){ 
+            cout << "#";}
         cout << endl;
 
         for (int i = 0; i < HEIGHT; i++) {
+            setColor(11);
             cout<<"#";
             for (int j = 0; j < WIDTH; j++) {
                 
                 if (i == snake.y && j == snake.x){
+                    setColor(10);
                     if(snake.dir==snake.LEFT){
                          cout<<"<";
                     }
@@ -108,25 +114,30 @@ public:
                     }
                 }
                     
-                else if (i == food.y && j == food.x)
-                    cout << "F";
+                else if (i == food.y && j == food.x){
+                setColor(12);
+                    cout << "F";}
                 else {
                     bool print = false;
                     for (int k = 0; k < snake.nTail; k++) {
                         if (snake.tailX[k] == j && snake.tailY[k] == i) {
+                            setColor(10);
                             cout << "o";
                             print = true;
                         }
                     }
-                    if (!print) cout << " ";
+                    if (!print) {
+                        setColor(15);
+                        cout << " ";}
                 }
                 
             }
+            setColor(11);
             cout<<"#";
             cout << endl;
         }
 
-        for (int i = 0; i < WIDTH + 2; i++) cout << "#";
+        for (int i = 0; i < WIDTH + 2; i++) {cout << "#";} setColor(14);
         cout << "\nScore: " << score << "  |  High Score: " << highScore << endl;
     }
 
@@ -153,6 +164,7 @@ public:
             score += 10;
             food.generate();
             snake.nTail++;
+            Beep(1000,200);
         }
     }
 };
@@ -165,7 +177,11 @@ int main() {
         game.draw();
         game.input();
         game.logic();
-        Sleep(200); // Sleep for 100 milliseconds to control game speed (Windows-specific)
+        if(game.score>=50){
+        Sleep(100); // Sleep for 100 milliseconds to control game speed (Windows-specific)
+        }else{
+            Sleep(500);
+        }
     }
     game.saveHighScore();
     system("cls");
