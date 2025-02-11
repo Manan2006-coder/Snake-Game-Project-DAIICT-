@@ -13,7 +13,9 @@ Snake game(course: IT206, DAIICT)
 7. [Conclusion](#conclusion)
 
 ##1.Introduction
+<br>
 Our project is on the snake game where the player controls a snake that grows in size as it consumes fruit. The game ends if the snake collides with itself or the boundaries of the play area.
+<br>
 
 ## 2. Installation
 
