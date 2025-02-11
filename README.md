@@ -12,7 +12,10 @@ Snake game(course: IT206, DAIICT)
 6. [Data Structure Analysis](#data-structure-analysis)
 7. [Conclusion](#conclusion)
 
-## 1. Installation
+##1.Introduction
+Our project is on the snake game where the player controls a snake that grows in size as it consumes fruit. The game ends if the snake collides with itself or the boundaries of the play area.
+
+## 2. Installation
 
 To run the Snake game, follow the instructions below:
 
@@ -30,7 +33,7 @@ To run the Snake game, follow the instructions below:
 4. Run the compiled executable:
    - On Windows: `snake_game.exe`
    
-## 2. Usage
+## 3. Usage
 
 After successfully installing and running the game, you can interact with it using the following controls:
 
@@ -48,7 +51,7 @@ After successfully installing and running the game, you can interact with it usi
 - The game ends when the snake hits the boundaries or collides with itself.
 - The score is displayed on the screen, and the high score is saved in `highscore.txt`.
    
-## 3. Contributing
+## 4. Contributing
 
 We welcome contributions to the Snake Game. If you want to contribute, please follow these steps:
 
@@ -58,11 +61,11 @@ We welcome contributions to the Snake Game. If you want to contribute, please fo
 4. Push to the branch and create a pull request.
 5. Please make sure to test the game thoroughly before submitting any pull requests.
 
-## 4. License
+## 5. License
    
 This project is licensed under the MIT License - see the LICENSE file for details.
 
-## 5. Data Structure Analysis
+## 6. Data Structure Analysis
    
 The program uses the following data structures and object-oriented concepts to represent the game:
 
@@ -113,7 +116,7 @@ The program uses the following data structures and object-oriented concepts to r
 - The `Snake` object is responsible for the movement of the snake and collision detection.
 - The `Food` object randomly places food on the grid and generates new food when eaten by the snake.
 
-## 6. Conclusion
+## 7. Conclusion
    
 This Snake game is an enjoyable and simple implementation that uses basic C++ programming concepts such as arrays, classes, and user input handling. It provides an interactive experience with a growing snake that tries to consume food while avoiding collisions with itself and the walls.
 
