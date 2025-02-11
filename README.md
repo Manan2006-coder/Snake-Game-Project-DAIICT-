@@ -4,12 +4,13 @@ Snake game(course: IT206, DAIICT)
 # Snake Game
 
 ## Table of Contents
-1. [Installation](#installation)
-2. [Usage](#usage)
-3. [Contributing](#contributing)
-4. [License](#license)
-5. [Data Structure Analysis](#data-structure-analysis)
-6. [Conclusion](#conclusion)
+1. Introduction
+2. [Installation](#installation)
+3. [Usage](#usage)
+4. [Contributing](#contributing)
+5. [License](#license)
+6. [Data Structure Analysis](#data-structure-analysis)
+7. [Conclusion](#conclusion)
 
 ## 1. Installation
 
