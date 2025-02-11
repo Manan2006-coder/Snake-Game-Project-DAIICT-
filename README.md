@@ -12,7 +12,7 @@ Snake game(course: IT206, DAIICT)
 6. [Data Structure Analysis](#data-structure-analysis)
 7. [Conclusion](#conclusion)
 
-<h6>1. Introduction</h6>
+<h1>1. Introduction</h1>
 <br>
 Our project is on the snake game where the player controls a snake that grows in size as it consumes fruit. The game ends if the snake collides with itself or the boundaries of the play area.
 <br>
