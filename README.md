@@ -23,8 +23,8 @@ To run the Snake game, follow the instructions below:
 
 ### Prerequisites:
 
-- C++ compiler (e.g., g++, MSVC, etc.)
-- Windows Operating System (for system("cls") and Sleep() functions, as well as _kbhit() and _getch())
+- C++ compiler 
+- Windows Operating System 
 
 ### Steps:
 
@@ -53,19 +53,6 @@ After successfully installing and running the game, you can interact with it usi
 - The game ends when the snake hits the boundaries or collides with itself.
 - The score is displayed on the screen, and the high score is saved in `highscore.txt`.
    
-## 4. Contributing
-
-We welcome contributions to the Snake Game. If you want to contribute, please follow these steps:
-
-1. Fork the repository.
-2. Create a new branch for your feature or bugfix.
-3. Commit your changes.
-4. Push to the branch and create a pull request.
-5. Please make sure to test the game thoroughly before submitting any pull requests.
-
-## 5. License
-   
-This project is licensed under the MIT License - see the LICENSE file for details.
 
 ## 6. Data Structure Analysis
    
@@ -74,7 +61,7 @@ The program uses the following data structures and object-oriented concepts to r
 ### Classes:
 
 #### Food Class:
-- **Attributes**:
+- Attributes:
   - `x`, `y`: Coordinates of the food on the grid.
 - **Methods**:
   - `generate()`: Randomly generates the position of the food within the grid dimensions.
