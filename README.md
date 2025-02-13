@@ -50,7 +50,17 @@ After successfully installing and running the game, you can interact with it usi
 - The snake grows in size with each food it consumes.
 - The game ends when the snake hits the boundaries or collides with itself.
 - The score is displayed on the screen, and the high score is saved in `highscore.txt`.
-   
+
+### Functions
+
+- generate()-> it generates food at random positions in the grid.
+- move()  -> it helps in swapping the position of tail in x and y direction.
+- draw()  -> it helps in creating grid, food and of snake.
+- input() -> it helps in taking input from user. we used two windows defined function kbhit() which is used for respond when 
+             no input is given from user side and use _getch() function for scanning character which user give.
+-logic()  -> it is used to give conditions of termination of game. Game terminates when snake collides with it's own body 
+             parts or with boundaries of grid. This function also increase length of snake when it eats fruit and increase 
+             score by  10.
 
 ## 4. Data Structure Analysis
    
