@@ -171,16 +171,18 @@ public:
 
 int main() {
     restart:
-    char response;
     Grid game;
+    int sleepVal=400;
     while (!game.gameOver) {
         game.draw();
         game.input();
         game.logic();
-        if(game.score>=50){
-        Sleep(100); // Sleep for 100 milliseconds to control game speed (Windows-specific)
+        if(game.score<=50){
+        Sleep(sleepVal); // Sleep for 100 milliseconds to control game speed (Windows-specific)
+        }else if(sleepVal>80){
+            Sleep(sleepVal-((game.score)*2));
         }else{
-            Sleep(500);
+            Sleep(sleepVal);
         }
     }
     game.saveHighScore();
@@ -191,6 +193,7 @@ int main() {
     cout << "Highest Score: " << game.highScore << "\n";
     cout << "Thanks for playing!\n\n";
     cout << "Do you want to restart? Press \"r\" to do so else press any other key....\n\n";
+    char response;
     cin>>response;
     if(response=='r'){
         goto restart;
@@ -200,8 +203,6 @@ int main() {
           game.highScore=0;
             file << game.highScore;
             file.close();
-    
-            
     return 0;
     }
-}     
+}
