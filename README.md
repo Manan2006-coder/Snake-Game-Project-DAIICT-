@@ -29,9 +29,9 @@ To run the Snake game, follow the instructions below:
 1. download the source code to your local machine.
 2. Open a terminal in the directory where the source code is located.
 3. Compile the code:
-   - For g++, run: `g++ -o snake_game snake_game.cpp`
+   - For g++, run: `g++ -o snakegame snakegame.cpp`
 4. Run the compiled executable:
-   - On Windows: `snake_game.exe`
+   - On Windows: `snakegame.exe`
    
 ## 3. Usage
 
