@@ -69,7 +69,7 @@ The program uses the following data structures and object-oriented concepts to r
 ### Data Structures Used:
 
 #### Arrays:
--We have used array to represent snake body and 2D array in form of nested form to represent grid.
+-We have used array to represent snake body and nested for loop to represent grid.
 - The `tailX[]` and `tailY[]` arrays store the positions of the snake's tail. These arrays are used in conjunction with the `nTail` variable to keep track of the snake’s growing body.
 
 #### Enum:
