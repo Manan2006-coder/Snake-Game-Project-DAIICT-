@@ -178,7 +178,7 @@ int main() {
         game.input();
         game.logic();
         if(game.score<=50){
-        Sleep(sleepVal); // Sleep for 100 milliseconds to control game speed (Windows-specific)
+        Sleep(sleepVal); 
         }else if(sleepVal>80){
             Sleep(sleepVal-((game.score)*2));
         }else{
