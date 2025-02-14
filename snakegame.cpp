@@ -177,12 +177,10 @@ int main() {
         game.draw();
         game.input();
         game.logic();
-        if(game.score<=50){
+        if(game.score<=70){
         Sleep(sleepVal); 
-        }else if(sleepVal>80){
+        }else if(game.score>80){
             Sleep(sleepVal-((game.score)*2));
-        }else{
-            Sleep(sleepVal);
         }
     }
     game.saveHighScore();
